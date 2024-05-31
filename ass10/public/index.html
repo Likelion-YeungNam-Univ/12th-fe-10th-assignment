@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>책 제목찾기 API 연습</title>
+</head>
+<script src = "api.key.js"></script>
+<body>
+  <div id="root"></div>
+
+  <script>
+    $.ajax({
+      method : "GET", url :"https://dapi.kakao.com/v3/search/book?target=title", 
+      data: {query : " "},
+      headers:{Authorization: $config.apikey},
+    })
+
+
+    .done(function(msg){
+      alert("Data Saved : " + msg);
+    });
+
+  </script>
+
+</body>
+</html>
