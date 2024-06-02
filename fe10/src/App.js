@@ -42,9 +42,15 @@ function App() {
         {res.map((item)=>{
           return(
             // 가게 리스트 컴포넌트
-            <ResInfo resTitle={item.MAIN_TITLE} detail={item.ITEMCNTNTS} mainMenu={item.RPRSNTV_MENU}
-                gugun={item.GUGUN_NM} addr={item.ADDR1} tel={item.CNTCT_TEL} weekNTime={item.USAGE_DAY_WEEK_AND_TIME} 
-                homepage={item.HOMEPAGE_URL && item.HOMEPAGE_URL.length > 0 ? item.HOMEPAGE_URL : "없음"}> {/* 홈페이지가 없을때 없음 처리 */}
+            <ResInfo 
+              key={item.UC_SEQ}
+              resTitle={item.MAIN_TITLE} 
+              detail={item.ITEMCNTNTS} 
+              mainMenu={item.RPRSNTV_MENU}
+              gugun={item.GUGUN_NM} 
+              addr={item.ADDR1} tel={item.CNTCT_TEL} 
+              weekNTime={item.USAGE_DAY_WEEK_AND_TIME} 
+              homepage={item.HOMEPAGE_URL && item.HOMEPAGE_URL.length > 0 ? item.HOMEPAGE_URL : "없음"}> {/* 홈페이지가 없을때 없음 처리 */}
             </ResInfo>
           )
         })}
