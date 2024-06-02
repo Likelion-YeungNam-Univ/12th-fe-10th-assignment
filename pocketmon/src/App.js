@@ -1,6 +1,18 @@
 import styled from "styled-components";
 import "./App.css";
 import Card from "./Card";
+
+function App() {
+  return (
+    <Container>
+      <Header>
+        <Logo src="./logo.jpeg"></Logo>
+        <Title>포켓몬 도감</Title>
+      </Header>
+      <Card />
+    </Container>
+  );
+}
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,9 +27,10 @@ const Header = styled.header`
   right: 0;
   height: 100px;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: black;
+
 `;
 
 const Title = styled.h1`
@@ -25,19 +38,13 @@ const Title = styled.h1`
   text-align: center;
   color: white;
   font-size: 35px;
+  flex-grow: 1;
+  margin-right: 200px;
 `;
 
-function App() {
-  return (
-    <Container>
-      
-      <Header>
-        <Title>포켓몬 도감</Title>
-
-      </Header>
-      <Card />
-    </Container>
-  );
-}
+const Logo = styled.img`
+  width: 200px;
+  height: auto;
+`;
 
 export default App;
