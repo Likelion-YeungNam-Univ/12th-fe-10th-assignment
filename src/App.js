@@ -7,8 +7,7 @@ function App() {
   const [city, setCity] = useState('');
   const [result, setResult] = useState({});
 
-  const API_key = "0724e7c87275904de29ff7329d6eae99"
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_key}`
 
   const searchWeather = async() => {
     try {
