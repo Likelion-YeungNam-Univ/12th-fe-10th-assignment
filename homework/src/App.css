@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 20px 0;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
