@@ -29,15 +29,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Movie Search</h1>
+      <h1>영화 검색</h1>
       <form onSubmit={handleSearch}>
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search for a movie..."
+          placeholder="영화 제목을 입력하세요..."
         />
-        <button type="submit">Search</button>
+        <button type="submit">검색</button>
       </form>
       {loading ? <p>Loading...</p> : <MovieList movies={movies} />}
     </div>

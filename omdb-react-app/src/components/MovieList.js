@@ -8,7 +8,7 @@ const MovieList = ({ movies }) => {
       {movies.length ? (
         movies.map((movie) => <Movie key={movie.imdbID} movie={movie} />)
       ) : (
-        <p>No movies found</p>
+        <p>입력한 영화가 존재하지 않습니다.</p>
       )}
     </div>
   );
