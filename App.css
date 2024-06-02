@@ -1,0 +1,21 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #00ced1; /* 청록색 */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(12px + 2vmin); /* 글자 크기를 크게 */
+    color: white;
+  }
+  
+  input {
+    padding: 8px;
+    margin: 8px 0;
+    font-size: 1.2em; /* 입력 상자 글자 크기 */
+  }
+  
