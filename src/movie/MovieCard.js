@@ -66,13 +66,5 @@ const Info = styled.div`
     font-weight : bold;
 `;
 
-const Popularity = styled.p`
-
-`
-
-const stars = styled.p`
-
-`;
-
 
 export default MovieCard

@@ -7,7 +7,6 @@ const Main = () => {
       <Wrapper>
           <Title>현재 상영 중인 영화</Title>
           <Description>현재 극장에서 상영 중인 영화들을 확인해보세요 ! </Description>
-          {/* <MovieList></MovieList> */}
           <MovieList></MovieList>
     </Wrapper>
   )
